@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>登陆/注册</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <!-- Fontawesome Star -->
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome-stars.css">
+    <!-- Ion Icon -->
+    <link rel="stylesheet" href="assets/css/vendor/ion-fonts.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.css">
+    <!-- jQuery Ui -->
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <!-- Venobox.css -->
+    <link rel="stylesheet" href="assets/css/plugins/venobox.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
+    <!--
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    -->
+
+    <!-- Main Style CSS (Please use minify version for better website load performance) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/style.min.css">-->
+
+    <!--导入布局js，共享header和footer-->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/include.js"></script>
+
+</head>
+
+<body class="template-color-1">
+
+    <div class="main-wrapper">
+
+        <!-- 转场动画 -->
+        <div class="loading">
+            <div class="text-center middle">
+                <span class="loader">
+            <span class="loader-inner"></span>
+                </span>
+            </div>
+        </div>
+
+        <!-- 引入header -->
+        <div id="header"></div>
+
+        <!-- 路径 -->
+        <div class="breadcrumb-area">
+            <div class="container">
+                <div class="breadcrumb-content">
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li class="active">登录/注册</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 登陆/注册 开始 -->
+        <div class="umino-login-register_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
+                        <!-- 用户登陆 -->
+                        <form action="#">
+                            <div class="login-form">
+                                <h4 class="login-title">登录</h4>
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <label>邮箱(仅国科大)*</label>
+                                        <input type="email" placeholder="邮箱地址">
+                                    </div>
+                                    <div class="col-12 mb--20">
+                                        <label>密码</label>
+                                        <input type="password" placeholder="密码">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="check-box">
+                                            <input type="checkbox" id="remember_me">
+                                            <label for="remember_me">记住我</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="forgotton-password_info">
+                                            <a href="#" style="float: right"> 忘记密码?</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="umino-login_btn">登录</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+                        <form action="#">
+                            <div class="login-form">
+                                <h4 class="login-title">注册</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 mb--20">
+                                        <label>用户名</label>
+                                        <input type="text" placeholder="用户名">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb--20">
+                                        <label>学院*</label>
+                                        <input type="text" placeholder="学院">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label>邮箱地址*</label>
+                                        <input type="email" placeholder="邮箱地址">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>密码</label>
+                                        <input type="password" placeholder="密码">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>确认密码</label>
+                                        <input type="password" placeholder="确认密码">
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="umino-register_btn">注册</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 登陆/注册 结束-->
+
+        <!-- 引入footer页面 -->
+        <div id="footer"></div>
+
+    </div>
+
+    <!-- JS
+============================================ -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <!-- Countdown JS -->
+    <script src="assets/js/plugins/countdown.js"></script>
+    <!-- Barrating JS -->
+    <script src="assets/js/plugins/jquery.barrating.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="assets/js/plugins/jquery.counterup.js"></script>
+    <!-- Nice Select JS -->
+    <script src="assets/js/plugins/jquery.nice-select.js"></script>
+    <!-- Sticky Sidebar JS -->
+    <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
+    <!-- jQuery UI -->
+    <script src="assets/js/plugins/jquery-ui.min.js"></script>
+    <!-- jQuery UI Touch Punch -->
+    <script src="assets/js/plugins/jquery.ui.touch-punch.min.js"></script>
+    <!-- Venobox JS -->
+    <script src="assets/js/plugins/venobox.min.js"></script>
+    <!-- Scroll Top JS -->
+    <script src="assets/js/plugins/scroll-top.js"></script>
+    <!-- Theia Sticky Sidebar JS -->
+    <script src="assets/js/plugins/theia-sticky-sidebar.min.js"></script>
+    <!-- Waypoints JS -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+    <!-- ElevateZoom JS -->
+    <script src="assets/js/plugins/jquery.elevateZoom-3.0.8.min.js"></script>
+    <!-- Images loaded JS -->
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <!-- Ajax Mail JS -->
+    <script src="assets/js/ajax-mail.js"></script>
+
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
