@@ -9,9 +9,9 @@ class UsersController <ApplicationController
 			.permit(:email, :password, :password_confirmation))
 		if @user.save
 			flash[:notice] ="注册成功"
-			redirect_to root_path
+			redirect_to new_session_path
 		else
-			render action :new
+			render action: :new
 		end
 
 	end
