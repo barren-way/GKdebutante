@@ -1,7 +1,7 @@
 class Product < ApplicationRecord
 	
 	belongs_to :category
-	before_creat :set_default_attrs
+	before_create :set_default_attrs
 
 
 

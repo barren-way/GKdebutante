@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>蛋人商城</title>
+    <title>管理平台</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= stylesheet_link_tag 'admin', media: 'all' %>
     <%= yield :stylesheets %>
   </head>
 
   <body>
-    <%= render 'layouts/menu' %>
+    <%= render 'admin/layouts/menu' %>
     <div class="container">
       <% unless flash[:notice].blank? %>
+
         <div class="alert alert-info"><%= flash[:notice] %></div>
       <% end -%>
       
@@ -23,3 +24,4 @@
     <%= yield :javascripts %>
   </body>
 </html>
+
