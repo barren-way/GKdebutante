@@ -1,6 +1,6 @@
 class Admin::ProductsController < Admin::BaseController
 
-  before_action :find_product, only: [:edit, :update, :destroy]
+  before_action :find_product, only: [:edit, :update, :show]
 
   def index
     @products = Product.page(params[:page] || 1).per_page(params[:per_page] || 10)
@@ -40,7 +40,7 @@ class Admin::ProductsController < Admin::BaseController
     end
   end
 
-  def destroy
+  def show#虽然叫show，但实际上是删除
     if @product.destroy
       flash[:notice] = "删除成功"
       redirect_to admin_products_path
