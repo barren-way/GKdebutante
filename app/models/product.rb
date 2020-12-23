@@ -17,6 +17,7 @@ class Product < ApplicationRecord
   validates :description, presence: { message: "描述不能为空" }
 
   belongs_to :category
+  has_many :product_images
 
   before_create :set_default_attrs
 
