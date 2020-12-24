@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_23_074150) do
+ActiveRecord::Schema.define(version: 2020_12_24_025309) do
 
   create_table "categories", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_12_23_074150) do
     t.datetime "image_updated_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["product_id", "weight"], name: "index_product_images_on_product_id_and_weight"
     t.index ["product_id"], name: "index_product_images_on_product_id"
   end
 

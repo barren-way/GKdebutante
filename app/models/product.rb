@@ -18,7 +18,8 @@ class Product < ApplicationRecord
 
   belongs_to :category
 
-  has_many :product_images,  dependent: :destroy
+  has_many :product_images, -> { order(weight: 'desc') },
+    dependent: :destroy
 
   before_create :set_default_attrs
 
