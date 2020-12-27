@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_25_134301) do
+ActiveRecord::Schema.define(version: 2020_12_27_130731) do
+
+  create_table "addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "address_type"
+    t.string "contact_name"
+    t.string "cellphone"
+    t.string "address"
+    t.string "zipcode"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id", "address_type"], name: "index_addresses_on_user_id_and_address_type"
+  end
 
   create_table "categories", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
@@ -80,6 +92,7 @@ ActiveRecord::Schema.define(version: 2020_12_25_134301) do
     t.string "activation_token"
     t.datetime "activation_token_expires_at"
     t.string "uuid"
+    t.integer "default_address_id"
     t.index ["activation_token"], name: "index_users_on_activation_token"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["remember_me_token"], name: "index_users_on_remember_me_token"

@@ -22,3 +22,4 @@ module MasterRailsByActions
     
   end
 end
+

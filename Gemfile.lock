@@ -89,7 +89,7 @@ GEM
     diff-lcs (1.4.4)
     erubi (1.10.0)
     execjs (2.7.0)
-    faraday (1.1.0)
+    faraday (1.2.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     ffi (1.14.2)
@@ -277,7 +277,7 @@ DEPENDENCIES
   database_cleaner (~> 1.5.3)
   font-awesome-rails
   jbuilder (~> 2.7)
-  jquery-rails
+  jquery-rails (~> 4.4.0)
   listen (~> 3.2)
   mysql2 (>= 0.4.4)
   paperclip (~> 5.0.0)
